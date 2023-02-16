@@ -11,6 +11,12 @@ namespace UserRegistrationProgram
             string fName = Console.ReadLine();
             bool validFirstName = validation.validateFirstName(fName);
             Console.WriteLine("First Name Valid : " + validFirstName);
+            Console.WriteLine("______________________________________________________________________");
+            Console.WriteLine("Enter Last Name : ");
+            string lName = Console.ReadLine();
+            bool validLastName = validation.validateLastName(lName);
+            Console.WriteLine("Last Name Valid : " + validLastName);
+            Console.WriteLine("______________________________________________________________________");
         }
     }
 }
