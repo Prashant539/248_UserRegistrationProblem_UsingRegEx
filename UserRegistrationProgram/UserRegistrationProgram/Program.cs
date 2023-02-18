@@ -27,6 +27,11 @@ namespace UserRegistrationProgram
             bool validNumber = validation.validateNumber(number);
             Console.WriteLine("Mobile Number Valid : " + validNumber);
             Console.WriteLine("______________________________________________________________________");
+            Console.WriteLine("Enter Password : ");
+            string password = Console.ReadLine();
+            bool validPassword = validation.validatePassword(password);
+            Console.WriteLine("Password Valid : " + validPassword);
+            Console.WriteLine("______________________________________________________________________");
         }
     }
 }
