@@ -32,6 +32,11 @@ namespace UserRegistrationProgram
             bool validPassword = validation.validatePassword(password);
             Console.WriteLine("Password Valid : " + validPassword);
             Console.WriteLine("______________________________________________________________________");
+            Console.WriteLine("Enter Password : ");
+            string password2 = Console.ReadLine();
+            bool validPassword2 = validation.validatePassword(password2);
+            Console.WriteLine("Password Valid : " + validPassword2);
+            Console.WriteLine("______________________________________________________________________");
         }
     }
 }

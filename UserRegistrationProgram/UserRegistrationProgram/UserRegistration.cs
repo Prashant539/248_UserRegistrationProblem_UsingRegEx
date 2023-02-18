@@ -14,6 +14,7 @@ namespace UserRegistrationProgram
         public static string REGEX_EMAIL = "^[a-zA-Z0-9]+([-.+_@#$][a-zA-Z0-9]+)*[@][a-zA-Z0-9]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2})?$?";
         public static string REGEX_NUMBER = "^[1-9]{1}[0-9]{1}[ ][1-9]{1}[0-9]{9}$";
         public static string REGEX_PASSWORD = "^[a-zA-Z0-9]{8}$";
+        public static string REGEX_PASSWORD2 = "^[A-Z]{1}[a-zA-Z0-9]{7}$";
         public bool validateFirstName(string fName)
         {
             return Regex.IsMatch(fName, REGEX_FIRST_NAME);
