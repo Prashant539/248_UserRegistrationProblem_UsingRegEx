@@ -15,6 +15,8 @@ namespace UserRegistrationProgram
         public static string REGEX_NUMBER = "^[1-9]{1}[0-9]{1}[ ][1-9]{1}[0-9]{9}$";
         public static string REGEX_PASSWORD = "^[a-zA-Z0-9]{8}$";
         public static string REGEX_PASSWORD2 = "^[A-Z]{1}[a-zA-Z0-9]{7}$";
+        public static string REGEX_PASSWORD3 = "^[A-Z]{1,}[a-z]{6}[0-9]{1,}$";
+
         public bool validateFirstName(string fName)
         {
             return Regex.IsMatch(fName, REGEX_FIRST_NAME);
@@ -34,6 +36,14 @@ namespace UserRegistrationProgram
         public bool validatePassword(string password)
         {
             return Regex.IsMatch(password, REGEX_PASSWORD);
+        }
+        public bool validatePassword2(string password2)
+        {
+            return Regex.IsMatch(password2, REGEX_PASSWORD2);
+        }
+        public bool validatePassword3(string password3)
+        {
+            return Regex.IsMatch(password3, REGEX_PASSWORD3);
         }
     }
 }
